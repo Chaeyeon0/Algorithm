@@ -3,14 +3,13 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int tempature = sc.nextInt();
+        int temperature = sc.nextInt();  // -200 ~ 200 사이 값이 들어옴
 
-        if(tempature <= 0){
+        if (temperature <= 0) {
             System.out.println("ice");
-        } else if (tempature > 100) {
+        } else if (temperature >= 100) {
             System.out.println("vapor");
-        }
-        else{
+        } else {
             System.out.println("water");
         }
     }
