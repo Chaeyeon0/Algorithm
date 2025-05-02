@@ -5,24 +5,18 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();
 
-        for (int i = N; i < 101; i++) {
-            if(N>=90){
-                System.out.print('A' + " ");
+        for (int i = N; i <= 100; i++) {
+            if (i >= 90) {
+                System.out.print("A ");
+            } else if (i >= 80) {
+                System.out.print("B ");
+            } else if (i >= 70) {
+                System.out.print("C ");
+            } else if (i >= 60) {
+                System.out.print("D ");
+            } else {
+                System.out.print("F ");
             }
-            else if (N>=80) {
-                System.out.print('B'+ " ");
-            }
-            else if (N>=70) {
-                System.out.print('C'+ " ");
-            }
-            else if (N>=60) {
-                System.out.print('D'+ " ");
-            }
-            else {
-                System.out.print('E'+ " ");
-            }
-            N++;
         }
-
     }
 }
